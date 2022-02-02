@@ -149,9 +149,12 @@ export class Utils {
 
   /** inserts a CSS rule */
   static addCSSRule(sheet: CSSStyleSheet, selector: string, rules: string): void {
+    // @ts-ignore
+    TW.Runtime.globalWidgetStyleSheet.insertRule(selector + '{' + rules + '}',TW.Runtime.globalWidgetStyleSheet.cssRules.length);
     if (typeof sheet.addRule === 'function') {
       sheet.addRule(selector, rules);
     } else if (typeof sheet.insertRule === 'function') {
+      
       sheet.insertRule(`${selector}{${rules}}`);
     }
   }

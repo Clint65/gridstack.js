@@ -1,23 +1,13 @@
 {
-  "name": "gridstack",
-  "version": "5.0.0-dev",
+  "name": "fcadgridstack",
+  "version": "5.0.2-dev",
   "description": "TypeScript/JS lib for dashboard layout and creation, no external dependencies, with many wrappers (React, Angular, Vue, Ember, knockout...)",
   "main": "./dist/gridstack.js",
   "types": "./dist/gridstack.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gridstack/gridstack.js.git"
+    "url": "git+https://github.com/Clint65/gridstack.js.git"
   },
-  "funding": [
-    {
-      "type": "paypal",
-      "url": "https://www.paypal.me/alaind831"
-    },
-    {
-      "type": "venmo",
-      "url": "https://www.venmo.com/adumesny"
-    }
-  ],
   "scripts": {
     "build": "yarn --no-progress && rm -rf dist/* && grunt && yarn build:es6 && yarn build:es5 && yarn doc",
     "build:es6": "webpack && tsc --stripInternal",
@@ -46,16 +36,10 @@
     "Vue",
     "JavaScript"
   ],
-  "author": "Pavel Reznikov <pashka.reznikov@gmail.com>",
-  "contributors": [
-    "Dylan Weiss <dylan.weiss@gmail.com> (https://dylandreams.com)",
-    "Alain Dumesny <alaind831+github@gmail.com> (https://github.com/adumesny)"
-  ],
+  "author": "Cyril",
+
   "license": "see GridStack root license",
-  "bugs": {
-    "url": "https://github.com/gridstack/gridstack.js/issues"
-  },
-  "homepage": "http://gridstack.github.io/gridstack.js/",
+
   "devDependencies": {
     "@types/jasmine": "^3.5.9",
     "@types/jquery": "^3.5.1",

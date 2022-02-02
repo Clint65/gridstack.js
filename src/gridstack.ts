@@ -1258,7 +1258,8 @@ export class GridStack {
     let cellHeight = this.opts.cellHeight as number;
     let unit = this.opts.cellHeightUnit;
     if (!cellHeight) return this;
-    this.el.style.height = row * cellHeight + unit;
+    //this.el.style.height = row * cellHeight + unit;
+    this.el.style.height='100%'
     return this;
   }
 
